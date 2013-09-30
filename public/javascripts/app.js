@@ -111,7 +111,7 @@ module.exports = Handlebars.template(function (Handlebars,depth0,helpers,partial
   var buffer = "", stack1, foundHelper, functionType="function", escapeExpression=this.escapeExpression;
 
 
-  buffer += "<div class=\"map-holder\">\n    <div class=\"bike\" />\n    <img id=\"boston_map\" class=\"map\" src=\"";
+  buffer += "<link href='http://fonts.googleapis.com/css?family=Buenard' rel='stylesheet' type='text/css'>\n<div class=\"hns\">hns(<span class=\"brad\"></span>)<span style=\"color: grey\">-></span></div>\n<div class=\"map-holder\">\n    <div class=\"static\"></div>\n    <div class=\"vendor\"></div>\n    <div class=\"china-flag\"></div>\n    <div class=\"sprocket\"></div>\n\n    <div class=\"bike\" />\n    <img id=\"boston_map\" class=\"map\" src=\"";
   foundHelper = helpers.bostonMapUrl;
   if (foundHelper) { stack1 = foundHelper.call(depth0, {hash:{}}); }
   else { stack1 = depth0.bostonMapUrl; stack1 = typeof stack1 === functionType ? stack1() : stack1; }
@@ -119,7 +119,7 @@ module.exports = Handlebars.template(function (Handlebars,depth0,helpers,partial
   foundHelper = helpers.chinaMapUrl;
   if (foundHelper) { stack1 = foundHelper.call(depth0, {hash:{}}); }
   else { stack1 = depth0.chinaMapUrl; stack1 = typeof stack1 === functionType ? stack1() : stack1; }
-  buffer += escapeExpression(stack1) + "\" />\n<div>";
+  buffer += escapeExpression(stack1) + "\" />\n</div>\n\n<div style=\"background: url(http://en.xn--icne-wqa.com/images/icones/1/8/ark-open.png); background-size: 4%; padding: 80px\">\n    <div class=\"notes\">\n        <p>You are aweome, awesome, dude ok.  -Lincoln</p>\n        <p>You are aweome, awesome, dude ok.  -Lincoln</p>\n        <p>You are aweome, awesome, dude ok.  -Lincoln</p>\n        <p>You are aweome, awesome, dude ok.  -Lincoln</p>\n        <p>You are aweome, awesome, dude ok.  -Lincoln</p>\n        <p>You are aweome, awesome, dude ok.  -Lincoln</p>\n    </div>\n</div>\n";
   return buffer;});
 });
 

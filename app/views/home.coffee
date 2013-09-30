@@ -19,7 +19,6 @@ bikePath = [
   [80, 50], [25, 50], [22, 40], [75, 50]
 ]
 
-
 class HomeView extends Backbone.View
   template: HomeTemplate
   bikePathStep: 0

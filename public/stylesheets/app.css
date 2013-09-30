@@ -504,24 +504,50 @@ table {
 }
 
 body {
-  background: black; }
+  background: #99b3cc; }
   body .container {
     width: 1200px;
     margin: 0px auto; }
   body .map-holder {
     position: relative;
     height: 400px;
+    margin-bottom: 20px;
     overflow: hidden; }
+  body .notes {
+    background: rgba(255, 255, 255, 0.7);
+    min-height: 400px;
+    border-radius: 20px;
+    font-family: "Buenard"; }
+    body .notes p {
+      width: 33%;
+      float: left;
+      font-size: 28px;
+      padding: 1em;
+      box-sizing: border-box; }
+
+.hns {
+  font-family: "courier new", courier;
+  font-weight: bold;
+  font-size: 70px;
+  color: whitesmoke; }
+
+.brad {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  background-image: url("../img/brad_clipped_rev_1.png");
+  background-size: 100% auto; }
 
 .map {
   position: absolute;
-  top: 0; }
+  top: 0;
+  z-index: 1; }
 
 .bike {
   background-image: url("../img/bike.png");
   background-size: 100% auto;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   left: 100;
   width: 80px;
   height: 50px; }
@@ -535,6 +561,60 @@ body {
 #boston_map {
   right: 0;
   -webkit-transform: rotate(30deg); }
+
+.china-flag {
+  position: absolute;
+  z-index: 2;
+  background-image: url("../img/china_flag.png");
+  width: 80px;
+  height: 80px;
+  left: 100px;
+  top: 200px;
+  background-size: 100% auto; }
+
+.folders {
+  z-index: 2;
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  width: 100px; }
+  .folders i {
+    display: block;
+    float: left;
+    background-image: url("../img/folder.png");
+    background-size: 100% auto;
+    width: 48px;
+    height: 48px; }
+
+.static {
+  z-index: 0;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100px;
+  height: 100px;
+  background-size: 100% auto;
+  background-image: url("../img/static.jpg"); }
+
+.vendor {
+  z-index: 0;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 100px;
+  height: 100px;
+  background-size: 100% auto;
+  background-image: url("../img/content_clipped_rev_2.png"); }
+
+.sprocket {
+  z-index: 2;
+  position: absolute;
+  left: 80%;
+  top: 50%;
+  width: 80px;
+  height: 95px;
+  background: url("../img/sprocket.png");
+  background-size: 100% auto; }
 
 /* ==========================================================================
    Helper classes
