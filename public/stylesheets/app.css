@@ -503,6 +503,38 @@ table {
     border-spacing: 0;
 }
 
+body {
+  background: black; }
+  body .container {
+    width: 1200px;
+    margin: 0px auto; }
+  body .map-holder {
+    position: relative;
+    height: 400px;
+    overflow: hidden; }
+
+.map {
+  position: absolute;
+  top: 0; }
+
+.bike {
+  background-image: url("../img/bike.png");
+  background-size: 100% auto;
+  position: absolute;
+  z-index: 1;
+  left: 100;
+  width: 80px;
+  height: 50px; }
+  .bike.flip {
+    -webkit-transform: scaleX(-1);
+    filter: FlipH; }
+
+#china_map {
+  -webkit-transform: rotate(-20deg); }
+
+#boston_map {
+  right: 0;
+  -webkit-transform: rotate(30deg); }
 
 /* ==========================================================================
    Helper classes

@@ -111,7 +111,7 @@ module.exports = Handlebars.template(function (Handlebars,depth0,helpers,partial
   var buffer = "", stack1, foundHelper, functionType="function", escapeExpression=this.escapeExpression;
 
 
-  buffer += "<div class=\"map-holder\">\n    <img class=\"bike\" src=\"./img/bike.png\" />\n    <img id=\"boston_map\" class=\"map\" src=\"";
+  buffer += "<div class=\"map-holder\">\n    <div class=\"bike\" />\n    <img id=\"boston_map\" class=\"map\" src=\"";
   foundHelper = helpers.bostonMapUrl;
   if (foundHelper) { stack1 = foundHelper.call(depth0, {hash:{}}); }
   else { stack1 = depth0.bostonMapUrl; stack1 = typeof stack1 === functionType ? stack1() : stack1; }
