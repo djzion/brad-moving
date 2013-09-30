@@ -5,7 +5,7 @@ coords =
   boston: '33.284620,-96.503906'
   china: '28.690588,105.996094'
 mapParams =
-  zoom: 3
+  zoom: 4
   maptype: 'terrain'
   size: '1000x500'
   sensor: false
@@ -15,9 +15,14 @@ chinaMapParams = $.extend {}, mapParams, center: coords.china
 bostonMapUrl = 'http://maps.google.com/maps/api/staticmap?' + $.param(bostonMapParams)
 chinaMapUrl = 'http://maps.google.com/maps/api/staticmap?' + $.param(chinaMapParams)
 
+bikePath = [
+  [80, 50], [25, 50], [22, 40], [75, 50]
+]
+
 
 class HomeView extends Backbone.View
   template: HomeTemplate
+  bikePathStep: 0
 
   getContext: ->
     bostonCoords = '33.284620,-96.503906'
@@ -37,5 +42,17 @@ class HomeView extends Backbone.View
 
   render: ->
     @$el.html @template(@getContext())
+    @pathStep()
+
+  pathStep: ->
+    coord = bikePath[@bikePathStep]
+    @$('.bike').animate(left: coord[0] + '%', top: coord[1] + '%')
+    @$('.bike').toggleClass('flip', @currentStep and @currentStep < coord)
+    @currentStep = coord
+    @bikePathStep++
+    if @bikePathStep > bikePath.length - 1
+      @bikePathStep = 0
+    _.delay _.bind(@pathStep, @), 5000
+
 
 module.exports = HomeView

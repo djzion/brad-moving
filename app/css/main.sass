@@ -1,5 +1,5 @@
 body
-  background: grey
+  background: black
 
   .container
     width: 1200px
@@ -19,6 +19,10 @@ body
   z-index: 1
   left: 100
   width: 80px
+
+  &.flip
+    -webkit-transform: scaleX(-1)
+    filter: FlipH
 
 #china_map
   -webkit-transform: rotate(-20deg)
