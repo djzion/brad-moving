@@ -138,7 +138,7 @@ coords = {
 };
 
 mapParams = {
-  zoom: 4,
+  zoom: 3,
   maptype: 'terrain',
   size: '1000x500',
   sensor: false,
@@ -146,7 +146,7 @@ mapParams = {
 };
 
 bostonMapParams = $.extend({}, mapParams, {
-  center: coords.boton
+  center: coords.boston
 });
 
 chinaMapParams = $.extend({}, mapParams, {
@@ -172,24 +172,6 @@ HomeView = (function(_super) {
   HomeView.prototype.bikePathStep = 0;
 
   HomeView.prototype.getContext = function() {
-    var bostonCoords, chinaCoords;
-    bostonCoords = '33.284620,-96.503906';
-    chinaCoords = '28.690588,105.996094';
-    mapParams = {
-      zoom: 3,
-      maptype: 'terrain',
-      size: '1000x500',
-      sensor: false,
-      style: 'feature:all|element:labels|visibility:off'
-    };
-    bostonMapParams = $.extend({}, mapParams, {
-      center: bostonCoords
-    });
-    chinaMapParams = $.extend({}, mapParams, {
-      center: chinaCoords
-    });
-    bostonMapUrl = 'http://maps.google.com/maps/api/staticmap?' + $.param(bostonMapParams);
-    chinaMapUrl = 'http://maps.google.com/maps/api/staticmap?' + $.param(chinaMapParams);
     return {
       bostonMapUrl: bostonMapUrl,
       chinaMapUrl: chinaMapUrl
