@@ -1,9 +1,0 @@
-{
-  "files": [
-    {
-      "from": "style.scss.hbs",
-      "to": "app/views/styles/{{name}}.scss"
-    }
-  ],
-  "dependencies": []
-}
