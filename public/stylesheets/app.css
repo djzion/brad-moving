@@ -530,6 +530,8 @@ body {
       font-size: 24px;
       padding: 1em;
       box-sizing: border-box; }
+      body .notes p img {
+        max-width: 100%; }
 
 .hns {
   font-family: "courier new", courier;
