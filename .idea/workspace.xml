@@ -38,10 +38,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.sass" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.sass" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/css/main.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="20" selection-start="153" selection-end="153" vertical-scroll-proportion="0.124087594">
+            <state line="10" column="20" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="4" selection-start="11" selection-end="11" vertical-scroll-proportion="0.04109589">
               <folding />
             </state>
           </provider>
@@ -94,6 +103,7 @@
         <option value="$PROJECT_DIR$/app/templates/page.hbs" />
         <option value="$PROJECT_DIR$/app/views/home.coffee" />
         <option value="$PROJECT_DIR$/app/css/main.sass" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -476,7 +486,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/css/main.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="20" selection-start="153" selection-end="153" vertical-scroll-proportion="0.124087594">
+        <state line="10" column="20" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="4" selection-start="11" selection-end="11" vertical-scroll-proportion="0.04109589">
           <folding />
         </state>
       </provider>
