@@ -1,5 +1,5 @@
 Backbone = require 'backbone'
-HomeTemplate = require 'templates/page'
+HomeTemplate = require 'templates/home'
 
 coords =
   boston: '33.284620,-96.503906'

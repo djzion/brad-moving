@@ -105,7 +105,7 @@ $(document).on('ready', function() {
 
 });
 
-;require.register("templates/page", function(exports, require, module) {
+;require.register("templates/home", function(exports, require, module) {
 module.exports = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
   helpers = helpers || Handlebars.helpers;
   var buffer = "", stack1, foundHelper, functionType="function", escapeExpression=this.escapeExpression;
@@ -130,7 +130,7 @@ var Backbone, HomeTemplate, HomeView, bikePath, bostonMapParams, bostonMapUrl, c
 
 Backbone = require('backbone');
 
-HomeTemplate = require('templates/page');
+HomeTemplate = require('templates/home');
 
 coords = {
   boston: '33.284620,-96.503906',
