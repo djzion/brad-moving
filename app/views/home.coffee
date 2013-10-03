@@ -32,7 +32,7 @@ class HomeView extends Backbone.View
 
   pathStep: ->
     coord = bikePath[@bikePathStep]
-    @$('.bike').animate(left: coord[0] + '%', top: coord[1] + '%')
+    @$('.bike').animate({left: coord[0] + '%', top: coord[1] + '%'}, 2000)
     @$('.bike').toggleClass('flip', @currentStep and @currentStep < coord)
     @currentStep = coord
     @bikePathStep++
